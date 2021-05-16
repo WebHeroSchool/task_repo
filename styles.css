@@ -190,8 +190,8 @@ body {
   .menu__icon {
     width: 24px;
     height: 24px;
-    margin-right: 1.8vw;
-    padding-left: 1px;
+    margin-right: 1.6vw;
+    padding-left: 2px;
   }
 
   .main {
@@ -199,7 +199,8 @@ body {
   }
 
   .description {
-    margin: 10.3vw 15vw 0 13.5vw;
+    margin: 10.3vw 15vw 0 11vw;
+    padding: 0 0 0 30px;
   }
 
   .description__title {
@@ -207,8 +208,7 @@ body {
     line-height: 52px;
     letter-spacing: 0;
     margin-bottom: 1.6vw;
-    padding: 3px 0 2px 0px;
-}
+    padding: 3px 0 2px 7px;
   }
 
   .description__text {
@@ -216,29 +216,44 @@ body {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0;
+    padding: 0px 0 0 8px;
   }
 
   .props {
-    width: 21.8vw;
+    width: 22.3vw;
     margin: 12.7vw 0 0 0;
+  }
+
+  .form {
+    padding: 0 0 0 4px;
   }
 
   .form__input {
     font-size: 14px;
     line-height: 16px;
-    padding: 3px 0 0 8px;
+    padding: 1px 0 2px 11px;
   }
 
   .form__button {
+    padding: 6px 14px 4px 0px;
+    margin-bottom: 1vw;
+    height: 2.9vw;
     font-size: 14px;
     line-height: 16px;
-    padding: 8px 18px 3px 0px;
-    margin-bottom: 1.1vw;
+  }
+
+  .props__title {
+    padding: 1px 0 0 5px;
   }
 
   .props__text {
     font-size: 12px;
     line-height: 14px;
+    padding: 0 0 0 4px;
+  }
+
+  .footer {
+    height: 1.8vw;
   }
 
 }
