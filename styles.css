@@ -26,6 +26,10 @@ body {
   margin-left: 4.8vw;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -203,6 +207,8 @@ body {
 
   .main {
     padding: 0 0 0 68px;
+    background: right bottom / 60.3vw 40vw no-repeat url(./img/Vector-4.png),
+                right bottom / 52.5vw 33.5vw no-repeat url(./img/Vector-3.png);
   }
 
   .description {
@@ -261,6 +267,21 @@ body {
 
   .footer {
     height: 1.8vw;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main {
+  background: right bottom / 63.3vw 42vw no-repeat url(./img/Vector-4.png),
+              right bottom / 54.5vw 35.5vw no-repeat url(./img/Vector-3.png);
+  }
+}
+
+@media (max-width: 1225px) {
+  .main {
+  background: right bottom / 63.3vw 47vw no-repeat url(./img/Vector-4.png),
+              right bottom / 54.5vw 35.5vw no-repeat url(./img/Vector-3.png);
   }
 }
 
@@ -334,6 +355,220 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .header-logo {
+    margin: 2vw 3.6vw;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: bottom center / 100.5vw 27.5vw no-repeat url(./img/Vector-mobile.png);
+  }
+
+  .description {
+    width: 90vw;
+    margin: 0vw 0 3vw 2.3vw;
+    padding: 1px 0px 0 15px;
+  }
+
+  .description__title {
+    font-size: 35px;
+    line-height: 41px;
+    padding: 28px 0px 3px 0px;
+  }
+
+  .description__text {
+    font-size: 16px;
+    line-height: 19px;
+    width: 290px;
+    padding: 16px 4px 0 12px;
+    margin: 0px 162px;
+  }
+
+  .props {
+    width: 89.5%;
+    margin: 8vw 0px 0vw 6vw;
+  }
+
+  .props__title {
+    text-align: left;
+    margin-bottom: 13px;
+    padding: 1px 0 0 7px;
+    text-align: center;
+  }
+
+  .form {
+    padding: 0 0 8px 7px;
+    align-items: center;
+  }
+
+  .form__input {
+    width: 291px;
+    height: 33px;
+    padding: 4px 0px 1px 11px;
+    margin-bottom: 3.8vw;
+  }
+
+  .form__button {
+    width: 300px;
+    height: 40px;
+    padding: 10px 14px 8px 0px;
+
+  }
+
+  .props__text {
+    padding: 0 0 0 3px;
+    margin: 0 177px;
+    text-align: center;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 59px;
+    right: 24px;
+    width: 25px;
+    height: 3px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0056EC;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 -1px;
+    padding: 185px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+  }
+
+  .menu__item {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #333;
+    font: 30px/35px 'robotomedium', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  .menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #A563E7;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 168px 12px;
+    list-style: none;
+    text-align: center;
+    background-color: #FFF;
+  }
+
+  .menu__item {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #000;
+    font: 30px/36px 'museosans', sans-serif;
+    text-decoration: none;
+  }
+
+  #menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
+    transition-duration: .25s;
+  }
+
+  .menu__box {
+    transition-duration: .25s;
+  }
+
+  .menu__item {
+    transition-duration: .25s;
+  }
+
+  .menu__item:hover {
+    opacity: .5;
+  }
+
 @media (max-width: 375px) {
   .header-logo {
     margin: 6vw 3.6vw;
@@ -352,6 +587,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: bottom center / 100.5vw 67.5vw no-repeat url(./img/Vector-mobile.png);
   }
 
   .description {
@@ -496,5 +732,9 @@ body {
 
   .menu__item {
     transition-duration: .25s;
+  }
+
+  .menu__item:hover {
+    opacity: .5;
   }
 }
