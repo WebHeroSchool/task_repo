@@ -255,5 +255,68 @@ body {
   .footer {
     height: 1.8vw;
   }
+}
 
+@media(max-width: 1024px) {
+  .header {
+    width: 91.5%;
+    padding: 2.5vw 0;
+  }
+
+  .header-logo {
+    margin: 1.6vw 0.7vw;
+  }
+
+  .menu {
+    width: 37.5%;
+    margin: 0 2px 3px 0px;;
+  }
+
+  .menu__item {
+    padding: 0 10px 0 0px;
+  }
+
+  .menu__icon {
+    padding: 2px 6px 0 1px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .description {
+    width: 40vw;
+    margin: 13.9vw 15vw 0px 1.3vw;
+  }
+
+  .description__title {
+    margin-bottom: 2vw;
+    padding: 2px 0px 3px 8px;
+  }
+
+  .props {
+    width: 29.7vw;
+    margin: 16.9vw 0px 0px 62px;
+  }
+
+  .props__title {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+
+  .form__input {
+    margin-bottom: 1.2vw;
+    height: 40px;
+    padding: 3px 0px 0px 11px;
+  }
+
+  .form__button {
+    height: 3.9vw;
+    padding: 6px 13px 6px 0px;
+  }
+
+  .footer {
+    height: 2.4vw;
+  }
 }
