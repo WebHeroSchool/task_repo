@@ -373,7 +373,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: bottom center / 100.5vw 27.5vw no-repeat url(./img/Vector-mobile.png);
+    background: bottom center / 100.5vw 35.5vw no-repeat url(./img/Vector-mobile.png);
   }
 
   .description {
@@ -607,6 +607,7 @@ body {
     line-height: 19px;
     width: 290px;
     padding: 16px 4px 0 12px;
+    margin: 0;
   }
 
   .props {
@@ -621,7 +622,7 @@ body {
   }
 
   .form {
-    padding: 0 0 8px 7px;
+    padding: 0 28px 8px 7px;
   }
 
   .form__input {
