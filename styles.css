@@ -32,7 +32,7 @@ body {
 }
 
 .menu__item {
-    margin-right: 1.4vw;
+    margin-right: 26px;
     font-size: 0.9vw;
     line-height: 21px;
 }
@@ -51,6 +51,10 @@ body {
 
 .main {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
     width: 100%;
     background: right bottom / 60.3vw 40vw no-repeat url(./img/Vector-4.png),
                 right bottom / 52.5vw 33.5vw no-repeat url(./img/Vector-3.png);
@@ -58,7 +62,7 @@ body {
 }
 
 .description {
-    margin: 13.3vw 15vw 0 13.2vw;
+    margin: 2.7vw 15vw 6vw 13.3vw;
     width: 30.8vw;
     height: max-content;
 }
@@ -87,7 +91,7 @@ body {
 .props {
     width: 20.8vw;
     height: max-content;
-    margin: 16vw 0 0 0;
+    margin: 3vw 0 6.1vw 0px;
 }
 
 .props__title {
@@ -112,7 +116,7 @@ body {
     margin-bottom: 0.9vw;
     font-size: 21px;
     line-height: 26px;
-    padding: 3px 0 0 17px;
+    padding: 3px 0 0 15px;
 }
 
 /* ::-webkit-input-placeholder {
@@ -145,7 +149,7 @@ body {
     border: none;
     background-color: #7400E8;
     margin-bottom: 0.7vw;
-    padding: 1px 8px 3px 3px;
+    padding: 1px 8px 3px 1px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -178,20 +182,21 @@ body {
   }
 
   .menu {
-    width: 35.5%;
+    width: 35.2%;
   }
 
   .menu__item {
     font-size: 14px;
     line-height: 16px;
-    padding: 0 3px;
+    padding: 0 2px 0 0;
+    margin-right: 23px;
   }
 
   .menu__icon {
     width: 24px;
     height: 24px;
     margin-right: 1.6vw;
-    padding-left: 2px;
+    padding-left: 0;
   }
 
   .main {
@@ -199,7 +204,7 @@ body {
   }
 
   .description {
-    margin: 10.3vw 15vw 0 11vw;
+    margin: 2.3vw 15vw 9vw 11vw;
     padding: 0 0 0 30px;
   }
 
@@ -221,7 +226,7 @@ body {
 
   .props {
     width: 22.3vw;
-    margin: 12.7vw 0 0 0;
+    margin: 1.7vw 0 8vw 0;
   }
 
   .form {
@@ -273,20 +278,21 @@ body {
   }
 
   .menu__item {
-    padding: 0 10px 0 0px;
+      padding: 0 1px 0 0px;
   }
 
   .menu__icon {
-    padding: 2px 6px 0 1px;
+    padding: 2px 8px 0 1px;
   }
 
   .main {
     padding: 0;
+    background: right bottom / 60.5vw 54.5vw no-repeat url(./img/Vector-2-1024.png), right bottom / 50vw 45vw no-repeat url(./img/Vector-1-1024.png)
   }
 
   .description {
     width: 40vw;
-    margin: 13.9vw 15vw 0px 1.3vw;
+    margin: 4vw 15vw 13vw 1.3vw;
   }
 
   .description__title {
@@ -296,7 +302,7 @@ body {
 
   .props {
     width: 29.7vw;
-    margin: 16.9vw 0px 0px 62px;
+    margin: 6vw 0px 15vw 6vw;
   }
 
   .props__title {
@@ -305,10 +311,14 @@ body {
     letter-spacing: 0;
   }
 
+  .props__text {
+    padding: 2px 0 0 5px;
+  }
+
   .form__input {
     margin-bottom: 1.2vw;
     height: 40px;
-    padding: 3px 0px 0px 11px;
+    padding: 3px 0px 0px 12px;
   }
 
   .form__button {
@@ -318,5 +328,14 @@ body {
 
   .footer {
     height: 2.4vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
